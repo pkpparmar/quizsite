@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'poppins',sans-serif;
+       
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color:  #f1f6f9;
+            display: flex;
+
+        }
+        nav{
+            height:95%;
+            width: 15%;
+            background-color:  #27374d;
+            padding: 20px 20px;
+            margin: 10px;
+            border-radius: 4px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+      
+        }
+        .logo{
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        .logo span{
+            color: orange;
+            font-weight: bold;
+            font-size: 27px;
+        }
+        nav ul{
+            list-style: none;
+            margin-top: 50px;
+        }
+        nav ul li{
+            margin-top: 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            font-size: 18px;
+            padding: 10px;
+        }
+        nav ul li a:hover{
+            background-color: rgba(0,0,0,0.5);
+            border-left: 2px solid orange;
+        }
+        .container{
+            width: 85%;
+            margin: 50px;
+            padding: 30px 50px;
+            background-color: #9db2bf;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+            position: relative;
+        }
+        .container h2{
+            text-align: left;
+            padding: 20px;
+        }
+        .container ul{
+            list-style: none;
+            font-size: 22px;
+            margin:30px  40px ;
+
+        }
+        .container ul li{
+            margin-top: 30px;
+        }
+        .container button{
+            width: 40%;
+            height: 40px;
+            border: 0;
+            outline: none;
+            background-color: #1d2b3a;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+            box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+            margin: 40px 20px;
+            cursor: pointer;
+            transition: 0.6s;
+        }
+        .container button:hover{
+            background-color: #3c5d7e; ;
+        }
+        .container input[type="radio"]
+        {
+            height: 20px;
+            width: 20px;
+            accent-color: green;
+        }
+        .container .timer-box
+        {
+            height: 50px;
+            width: 150px;
+            background-color: #1d2b3a;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+            position: absolute;
+            top:20px;
+            right: 30px;
+            color: white;
+
+
+        }
+        .container .total-box
+        {
+            height: 50px;
+            width: 150px;
+            background-color: #1d2b3a;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            color: white;
+
+
+
+        }
+    </style>
+</head>
+<body>
+    
+        <nav>
+            <p class="logo"><span>Q</span>uiz App</p>
+            <ul>
+                <li><a href="index.html"><span>H</span>ome</a></li>
+                <li><a href="#"><span>A</span>bout</a></li>
+                <li><a href="#"><span>S</span>ervice</a></li>
+
+            </ul>
+        </nav>
+        <div class="container">
+            <h2 id="question"> 1 . question one </h2>
+            <ul>
+                <li> 
+                    <input type="radio" id="ans1" name="answer" >   <span>Answer</span>
+                </li>
+                 <li>
+                    <input type="radio" id="ans2" name="answer" >   <span>Answer</span>
+                </li>
+                 <li>
+                    <input type="radio" id="ans3" name="answer" >    <span>Answer</span>
+                </li>
+                 <li>
+                    <input type="radio" id="ans4" name="answer" >     <span>Answer</span>
+                </li>
+          
+        
+            </ul>
+            <button id="btn1">Next</button>
+            <div class="timer-box">
+                <p>timer here</p>
+
+            </div>
+
+            <div class="total-box">
+                <p>total her    s</p>
+            </div>
+    
+    
+        </div>
+    </div>
+    
+</body>
+</html>

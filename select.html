@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'poppins',sans-serif;
+        }
+        body{
+            height: 100vh;
+            width:100vw;
+            background-color: #f1f6f9;
+        }
+        nav{
+            height: 70px;
+            width: 100vw;
+            background-color: #27374d;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 25px;
+            color: white;
+            letter-spacing: 1px;
+        }
+        .logo span{
+            color: orange;
+            font-weight: bold;
+        }
+        nav ul{
+            display: flex;
+            gap:60px;
+            list-style: none;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            letter-spacing: 2px;
+            position: relative;
+            transition: 0.6s;
+        }
+        nav ul li a::after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: white;
+            left: 0;
+            bottom: -6px;
+            transition: linear 0.4s;
+        }
+        nav ul li a:hover::after{
+            color: orange;
+            width: 100%;
+        }
+        .container{
+            width: 70vw;
+            height: 60vh;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+            background-color: #9db2bf;
+            margin: 80px auto;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+        .container h2{
+            color: red;
+        }
+        .box{
+            height: 250px ;
+            width: 190px;
+            background-color: #27374d;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+            padding: 10px 20px;
+            transition: 0.6s;
+            border-radius: 4px;
+        }
+        .box:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+            border-radius: 4px;
+
+        }
+        .box h2{
+            text-align: center;
+            color: white;
+            padding: 10px ;
+            font-weight: 500;
+        }
+        .box p{
+            color: orange;
+            margin-top: 20px;
+            letter-spacing: 1px;
+            font-family: 'monsterrat',sans-serif;
+        }
+        .box button{
+            width: 100%;
+            height: 40px;
+            border: 0;
+            outline: none;
+            background-color: orange;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: 0.6s;
+            border-radius: 5px;
+        }
+        .box button a{
+            text-decoration: none;
+            color: black;
+
+        }
+        .box button:hover{
+            border-radius: 5px;
+
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <p class="logo"><span>Q</span>uiz App</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box" onclick="">
+            <h2>GK</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quasi.</p>
+            <button id="btn1"><a href="questionbox.html">SELECT</a></button>
+        </div>
+        <div class="box">
+            <h2>SCIENCE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quasi.</p>
+            <button id="btn1"><a href="questionbox.html">SELECT</a></button>
+        </div>
+        <div class="box">
+            <h2>HISTORY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quasi.</p>
+            <button id="btn1"><a href="questionbox.html">SELECT</a></button>
+        </div>
+        <div class="box">
+            <h2>GEOGRAPHY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quasi.</p>
+            <button id="btn1"><a href="questionbox.html">SELECT</a></button>
+        </div>
+    </div>
+</body>
+</html>
